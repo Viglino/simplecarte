@@ -1,0 +1,44 @@
+{
+  "name": "SimmpleCarte",
+  "version": "1.0.0",
+  "description": "Affichage d'une carte Ma Carte.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --out-dir ./.dist",
+    "build": "parcel build --no-source-maps --public-url . --out-dir ./www index.html"
+  },
+  "keywords": [
+    "Espace Collaboratif",
+    "Ma carte",
+    "export"
+  ],
+  "author": "Jean-Marc Viglino<jean-marc.viglino@ign.fr>",
+  "license": "",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-html-import-to-string": "0.0.1",
+    "parcel-bundler": "^1.9.4",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-static-files-copy": "^2.3.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "file-saver": "^2.0.0-rc.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2",
+    "mongo-parse": "^2.1.0",
+    "ol": "^5.1.3",
+    "ol-ext": "^3.0.2",
+    "papaparse": "^4.6.0",
+    "proj4": "^2.5.0",
+    "webfontloader": "^1.6.28"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "src/assets"
+    ],
+    "watcherGlob": "**"
+  }
+}

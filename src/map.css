@@ -1,0 +1,82 @@
+#map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #eee;
+}
+#map .ol-attribution {
+  display: none;
+}
+
+#map .ol-permalink {
+  display: none;
+}
+
+#map .ol-control button {
+  background-color: rgba(169, 177, 187, 0.5);
+  color: grey;
+}
+#map .ol-layerswitcher > button:after {
+  background: grey;
+}
+#map .ol-layerswitcher > button:before {
+  background: transparent;
+  box-shadow: 0.1em 0.1em grey;
+}
+
+#map .ol-mapzone {
+  top: auto;
+  right: auto;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,.5);
+  padding: 0;
+  width: 100%;
+}
+#map .ol-mapzone button {
+  display: none; 
+}
+#map .ol-mapzone > div {
+  display: inline-block;
+  border: .5em solid transparent;
+  width: calc(16.66% + .42em);
+  height: 6em;
+  max-height: 10%;
+  margin-right: -.5em;
+  box-sizing: border-box;
+}
+#map .ol-mapzone > div p {
+  color: #000;
+  background-color: rgba(255,255,255,.7);
+  display: none;
+}
+#map .ol-mapzone > div:hover p {
+  display: block;
+}
+#map .ol-mapzone > div:hover {
+  border-color: #fff;
+}
+
+.attributtion {
+  position: fixed;
+  right: 0;
+  bottom: 7.5em;
+  font-family: Arial;
+  font-size: .8em;
+  padding: .5em .5em 0;
+}
+.attributtion:hover {
+  background-color: rgba(255,255,255,.5);
+}
+
+.attributtion a,
+.attributtion {
+  color: #333333;
+  text-decoration: none;
+}
+
+.ol-scale-line {
+  bottom: 6.5em;
+}
