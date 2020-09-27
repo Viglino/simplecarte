@@ -1,0 +1,102 @@
+﻿.ol-overlay.ol-image-overlay
+{	top: auto;
+	height: 100px;
+	white-space: nowrap;
+	padding: 0;
+	overflow: visible;
+}
+.ol-overlay.ol-image-overlay img
+{	height: 94px;
+	border: 3px solid transparent;
+	cursor: pointer;
+	opacity: 0;
+	width:0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s, width 0.2s;
+}
+.ol-overlay.ol-image-overlay img:hover
+{	border-color: #fff;
+}
+.ol-overlay.ol-image-overlay img.visible
+{	width:auto;
+	opacity: 1;
+}
+.ol-overlay.ol-image-overlay > div
+{	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0 1em;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.ol-overlay.ol-image-overlay > div > div
+{	display: inline-block;
+	position: relative;
+	-webkit-transition: all 1s;
+	transition: all 0.2s;
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+}
+.ol-overlay.ol-image-overlay > div > div:hover
+{
+/*
+	-webkit-transform: scale(1.1);
+	transform: scale(1.03);
+	z-index: 1;
+*/
+}
+.ol-overlay.ol-image-overlay .info
+{	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	max-height: 50%;
+	pointer-events: none;
+	visibility: hidden;
+	font-size: 0.8em;
+	margin:0;
+	padding:0.5em 0;
+	overflow: hidden;
+	white-space: normal;
+	text-align: center;
+}
+.ol-overlay.ol-image-overlay > div > div:hover .info
+{
+	visibility: visible;
+}
+
+.ol-overlay.ol-image-overlay .arrow
+{	background: rgba(255,255,255,0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom:0;
+	margin: 0;
+	width:1em;
+	cursor: pointer;
+	z-index:2;
+}
+.ol-overlay.ol-image-overlay .next
+{	left: auto;
+	right: 0;
+}
+.ol-overlay.ol-image-overlay .arrow:hover
+{	background: rgba(255,255,255,0.8);
+}
+.ol-overlay.ol-image-overlay .arrow:before
+{	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-width: 10px 7px 10px 0;
+	border-color: transparent #000;
+	border-style: solid;
+	transform: translate(-50%, -50%);
+}
+.ol-overlay.ol-image-overlay .next:before
+{	border-width: 10px 0px 10px 7px;
+}

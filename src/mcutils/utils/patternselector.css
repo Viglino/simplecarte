@@ -1,0 +1,110 @@
+
+.patternSelector::after
+{	content:"";
+	width:0;
+	height:0;
+	border:5px solid #369;
+	border-color:#369 transparent transparent;
+	position: absolute;
+	top:30%;
+	right:3px;
+}
+
+.patternSelector
+{	border:1px solid #369;
+	font-size:1.5em;
+	background:#fff;
+	color:#369;
+	border-radius:2px;
+	padding:2px 25px 2px 2px;
+	cursor: pointer;
+	position: relative;
+	vertical-align:middle;
+	height:1.4em;
+	width: 2.5em;
+	display:block;
+	box-sizing: border-box;
+}
+
+.patternSelector > div
+{
+    display: block;
+    width: 37px;
+    height: 24px;
+    border: 1px solid #000;
+}
+
+.patternSelector_popup{
+/*    max-width: 300px;
+    min-width: 10em;*/
+    min-height: 3em;
+    position: absolute;
+    z-index: 100;
+    border: 1px solid #369;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    background: #fff;
+}
+.patternSelector_popup h4
+{	color: #369;
+	margin:0;
+}
+.patternSelector_popup ul
+{	margin:0.25em 0;
+}
+
+
+.patternSelectionPart{
+    max-width: 300px;
+    min-width: 10em;
+    width:300px;
+	float: left;
+}
+.patternPropertiesPart{
+    max-width: 300px;
+    min-width: 10em;
+	float: left;
+	padding:0 0.5em;
+}
+
+.patternSelectionPart > div
+{   float: left;
+    width: 50px;
+    height: 40px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.patternSelectionPart > div:hover
+{
+    border: 1px solid red;
+}
+
+.patternSelector_popup button
+{
+    background: #256285 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px 0.5em 4px 0;
+    padding: 5px;
+	float: right;
+}
+
+.patternPropertiesPart,
+.patternExtended .patternPropertiesShowButton
+{	display: none;
+}
+.patternExtended .patternPropertiesPart
+{	display: inline-block;
+}
+
+.patternPropertiesPart ul{
+    list-style-type: none;
+    padding-left: 5px;
+    left : 0;
+}
+
+.patternPropertiesPart input{
+    width: 4em;
+}

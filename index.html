@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Eco2Carte</title>
+    <title>Macarte Widget</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="chercher les établissements ouverts au public déclarés dans le Rhône conformes à l’accessibilité" />
     <meta name="keywords" content="ERP, conform, Rhone-Alpes, accessibilite, #accessibleatous, etablissement, public" />
@@ -27,9 +27,12 @@
     
   </head>
   <body>
-    <div id="map"></div>
-    <div class="attributtion">IGN-Géoportail &copy; Carte réalisée grâce à <a id="m_site2" href="http://macarte.ign.fr" target="_blank">macarte.ign.fr</a></div>
-    <!-- Main script -->
-    <script src="./index.js"></script>
+    <!-- Macarte Widget -->
+    <iframe class="macarte-widget" data-carte="./data/guichet.carte"></iframe>
+    <script src="./macarte.js"></script>
+
+    <script type="text/javascript">
+      // carteWidget.create('map');
+    </script>
   </body>
 </html>

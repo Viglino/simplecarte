@@ -24,6 +24,5 @@ document.title = config.title;
 // Create Map
 import macarte from './src/map'
 
-// DEBUG
+// EXPORT
 window.carteWidget = macarte;
-console.log(macarte)

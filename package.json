@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html --out-dir ./.dist",
-    "build": "parcel build --no-source-maps --public-url . --out-dir ./www index.html"
+    "start": "parcel index.html --out-dir ./.dist ",
+    "build": "parcel build macarte.js --no-source-maps --public-url . --out-dir ./www index.html"
   },
   "keywords": [
     "Espace Collaboratif",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "chroma-js": "^2.1.0",
     "file-saver": "^2.0.0-rc.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",

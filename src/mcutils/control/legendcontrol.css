@@ -1,0 +1,158 @@
+.ol-control.ol-legend,
+.ol-control.ol-legend:hover
+{	position: relative;
+	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0);
+	border: 5px solid rgba(255, 255, 255, 0.5);
+	margin: 0;
+	overflow:hidden;
+	box-sizing:border-box;
+	line-height: 0;
+	overflow-y: auto;
+	max-height:50%;
+
+	/* API */
+	width:200px;
+	padding:0 20px;
+}
+
+
+.ol-viewport .ol-control.ol-legend
+{	position: absolute;
+	border-width: 5px;
+}
+.ol-legend.ol-hidden,
+.ol-viewport.ol-nolegend .ol-control.ol-legend
+{	display:none;
+}
+
+.ol-control.ol-legend canvas
+{	margin:0 -20px -10px;
+	padding:0;
+}
+
+.ol-control.ol-legend button.ol-close
+{	float: right;
+	margin: 0 0.5em;
+	font-size: 0.9em;
+}
+.ol-control.ol-legend button.ol-close:after 
+{	content:"\2715";
+	font-size: 0.8em;
+}
+
+.ol-control.ol-legend button.ol-legend,
+.ol-control.ol-legend.ol-collapsed ul,
+.ol-control.ol-legend.ol-collapsed canvas
+{	display: none;
+}
+.ol-control.ol-legend.ol-collapsed 
+{	border: 3px solid rgba(255, 255, 255, 0.5) !important;
+	height: auto !important;
+	margin: 4.5em 0.5em;
+	padding: 0;
+	width: auto !important;
+}
+.ol-control.ol-legend.ol-collapsed button.ol-legend
+{	display: block;
+	position: relative;
+}
+.ol-control.ol-legend.ol-collapsed button.ol-legend:before,
+.ol-control.ol-legend.ol-collapsed button.ol-legend:after
+{	background-color: #eee;
+	bottom: 50%;
+	box-shadow: 0 6px 0 0 #eee, 0 12px 0 0 #eee;
+	content: "";
+	height: 3px;
+	left: 3px;
+	margin: 3px 0;
+	position: absolute;
+	width: 3px;
+}
+.ol-control.ol-legend.ol-collapsed button.ol-legend:after
+{	left: 8px;
+	width: 0.75em;
+}
+
+.ol-control.ol-legend ul,
+.ol-control.ol-legend li
+{	list-style:none;
+	padding:0;
+	box-sizing: border-box;
+
+	/* API */
+	line-height: 30px;
+	font: 15px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+.ol-control.ol-legend ul
+{	left: 0;
+	top: 10px;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+}
+.ol-control.ol-legend li .ol-button
+{	float:right;
+	height:100%;
+}
+.ol-control.ol-legend li .ol-button div
+{	width:14px;
+	height:15px;
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+}
+.ol-control.ol-legend li .ol-button div:before
+{	content: "";
+	font-size:20px;
+	top: 50%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 1em;
+	margin: -0.5em 0;
+	position: absolute;
+}
+/* http://www.unicodeblocks.com/search/pointing */
+.ol-control.ol-legend li .ol-button .ol-button-del:before 
+{	content: "\00d7";
+	color: red;
+}
+.ol-control.ol-legend li .ol-button .ol-button-up:before 
+{	content: "\25be";
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.ol-control.ol-legend li .ol-button .ol-button-down:before 
+{	content: "\25be";
+}
+.ol-control.ol-legend li .ol-button .ol-button-plus:before 
+{	content: "+";
+}
+
+.ol-control.ol-legend li .ol-button-symb
+{	cursor: pointer;
+	float: left;
+	width: 30px;
+	height: 100%;
+	margin: 0 20px;
+}
+.ol-control.ol-legend li .ol-button-symb:hover
+{	
+}
+
+
+.ol-control.ol-legend.ol-right
+{	border-right:0;
+}
+.ol-control.ol-legend.ol-left
+{	border-left:0;
+}
+.ol-control.ol-legend.ol-top
+{	border-top:0;
+}
+.ol-control.ol-legend.ol-bottom
+{	border-bottom:0;
+}
