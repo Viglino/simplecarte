@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html --out-dir ./.dist ",
-    "build": "parcel build macarte.js --no-source-maps --public-url . --out-dir ./www index.html"
+    "build": "parcel build macarte.js --no-content-hash --public-url . --out-dir ./www index.html"
   },
   "keywords": [
     "Espace Collaboratif",
